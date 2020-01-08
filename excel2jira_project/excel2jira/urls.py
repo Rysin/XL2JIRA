@@ -21,7 +21,5 @@ from . import views
 
 urlpatterns = [
     path('', views.home),
-    path('house', views.house),
-    path('report', views.report),
-    path('res', views.res)
+    # path('xl2jira', views.tool, name = 'xl2jiratool'),
 ]
