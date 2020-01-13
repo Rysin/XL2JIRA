@@ -1,4 +1,3 @@
-
 """excel2jira URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -21,5 +20,6 @@ from . import views
 
 urlpatterns = [
     path('', views.home),
-    # path('xl2jira', views.tool, name = 'xl2jiratool'),
+    path('xl2jira-form/', views.tool_form),
+    path('Keyin-Result/', views.main, name='RegProcess')
 ]
