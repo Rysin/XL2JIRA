@@ -29,8 +29,3 @@ def main(issueID):
 	final_string = f'key in({string_processed})'
 	return final_string
 
-
-issues = '''CREW-156251
-CREW-156287
-CREW-156295'''
-main(issues)
