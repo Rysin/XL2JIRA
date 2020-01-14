@@ -21,5 +21,5 @@ from . import views
 urlpatterns = [
     path('', views.home),
     path('xl2jira-form/', views.tool_form),
-    path('Keyin-Result/', views.main, name='RegProcess')
+    path('xl2jira-form/KeyinResult/', views.tool)
 ]
