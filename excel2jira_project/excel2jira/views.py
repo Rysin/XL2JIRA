@@ -15,8 +15,8 @@ def tool_form(request):
 def tool(request):
 	keyInQuery = request.GET['KeyInQuery']
 	print(keyInQuery)
-	HttpResponse('<h3>' + str(keyInQuery) + '<h3>')
-	HttpResponse('</br>')
+	userquery = HttpResponse('<h3>' + str(keyInQuery) + '<h3>')
+	br = HttpResponse('</br>')
 	print('Accessing Core Tool')
 	keyInResult = main(keyInQuery)
-	return HttpResponse('<h2>' + str(keyInResult) + '</h2>')
+	return HttpResponse('<h2>' + keyInQuery + '</br>' + keyInResult + '</h2>')
