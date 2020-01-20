@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-from .xl2jira_script import main
+from .xl2jira_script import keyin
 
 
 def home(request):
@@ -14,9 +14,5 @@ def tool_form(request):
 
 def tool(request):
 	keyInQuery = request.GET['KeyInQuery']
-	print(keyInQuery)
-	userquery = HttpResponse('<h3>' + str(keyInQuery) + '<h3>')
-	br = HttpResponse('</br>')
-	print('Accessing Core Tool')
-	keyInResult = main(keyInQuery)
-	return HttpResponse('<h2>' + keyInQuery + '</br>' + keyInResult + '</h2>')
+	keyInResult = keyin(keyInQuery)
+	return render(request, 'Result.html', {'result': keyInResult, 'query': keyInQuery})

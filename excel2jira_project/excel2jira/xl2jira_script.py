@@ -8,7 +8,7 @@ Created on Fri Apr 26 09:55:01 2019
 import re
 
 
-def main(issueID):
+def keyin(issueID):
 	"""
 	CREW-156251
 	CREW-156287

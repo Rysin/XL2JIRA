@@ -19,7 +19,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.home),
-    path('xl2jira-form/', views.tool_form),
-    path('xl2jira-form/KeyinResult/', views.tool)
+	path('', views.home),
+	path('xl2jira-form/', views.tool_form),
+	path('xl2jira-form/KeyinResult/', views.tool, name="Result")
 ]
